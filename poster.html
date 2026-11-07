@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Ifakara Connect poster</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #F1F5F2; font-family: Montserrat, 'Segoe UI', Arial, sans-serif; }
+  .sheet { width: 210mm; height: 297mm; margin: 0 auto; background: #0B3A27; color: #fff;
+           display: flex; flex-direction: column; padding: 18mm 18mm 16mm; gap: 9mm; }
+  .logos { display: flex; justify-content: space-between; align-items: center; }
+  .logos .ihi { width: 88mm; } .logos .seventy { width: 34mm; }
+  .eyebrow { margin-top: 8mm; color: #00BF63; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; font-size: 15pt; }
+  h1 { margin: 0; font-weight: 800; font-size: 40pt; line-height: 1.08; letter-spacing: -.01em; }
+  p { margin: 0; color: #B9D3C6; font-size: 15pt; line-height: 1.5; max-width: 150mm; }
+  .qr { align-self: center; background: #fff; padding: 7mm; border-radius: 6mm; margin-top: 4mm; }
+  .qr img { display: block; width: 92mm; height: 92mm; }
+  .steps { display: flex; justify-content: space-between; gap: 6mm; margin-top: auto; }
+  .step { flex: 1; border-top: 1px solid #2A5A53; padding-top: 4mm; }
+  .step b { display: block; color: #00BF63; font-size: 22pt; font-weight: 800; }
+  .step span { color: #fff; font-size: 12pt; line-height: 1.4; }
+  .url { text-align: center; color: #B9D3C6; font-size: 11pt; }
+</style></head>
+<body><div class="sheet">
+  <div class="logos"><img class="ihi" src="assets/ihi-logo-white.png" alt="Ifakara Health Institute">
+    <img class="seventy" src="assets/70-years-white.png" alt="70 Years of Impact"></div>
+  <div class="eyebrow">Ifakara Connect initiative</div>
+  <h1>Who should you meet at IHI?</h1>
+  <p>Everyone who filled in the Ifakara Connect form has a personal card listing the colleagues whose work fits theirs best.</p>
+  <div class="qr"><img src="qr.png" alt="QR code linking to https://map-data-engineering.github.io/ihi-connect-cards/"></div>
+  <div class="steps">
+    <div class="step"><b>1</b><span>Scan the code with your phone camera</span></div>
+    <div class="step"><b>2</b><span>Enter the email you used in the form</span></div>
+    <div class="step"><b>3</b><span>See your matches and say hello</span></div>
+  </div>
+  <div class="url">https://map-data-engineering.github.io/ihi-connect-cards/</div>
+</div></body></html>
