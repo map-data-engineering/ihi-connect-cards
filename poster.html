@@ -5,7 +5,8 @@
   @page { size: A4; margin: 0; }
   * { box-sizing: border-box; }
   body { margin: 0; background: #F1F5F2; font-family: Montserrat, 'Segoe UI', Arial, sans-serif; }
-  .sheet { width: 210mm; height: 297mm; margin: 0 auto; background: #0B3A27; color: #fff;
+  .sheet { -webkit-print-color-adjust: exact; print-color-adjust: exact; /* keep the green when printed */
+           width: 210mm; height: 297mm; margin: 0 auto; background: #0B3A27; color: #fff;
            display: flex; flex-direction: column; padding: 18mm 18mm 16mm; gap: 9mm; }
   .logos { display: flex; justify-content: space-between; align-items: center; }
   .logos .ihi { width: 88mm; } .logos .seventy { width: 34mm; }
@@ -19,6 +20,7 @@
   .step b { display: block; color: #00BF63; font-size: 22pt; font-weight: 800; }
   .step span { color: #fff; font-size: 12pt; line-height: 1.4; }
   .url { text-align: center; color: #B9D3C6; font-size: 11pt; }
+  @media print { body { background: none; } .sheet { height: 296.5mm; overflow: hidden; } } /* exactly one page */
 </style></head>
 <body><div class="sheet">
   <div class="logos"><img class="ihi" src="assets/ihi-logo-white.png" alt="Ifakara Health Institute">
